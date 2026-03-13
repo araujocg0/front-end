@@ -4,6 +4,7 @@ function App() {
   const [text, setText] = useState('');
   const [name, setName] = useState('');
   const [active, setActive] = useState(false);
+  const [contado, setContador] = useState(0)
 
   function changeBody() {
     setActive(!active); // alterna entre true e false
@@ -35,7 +36,6 @@ function App() {
         placeholder="Diga seu Nome"
       />
       <button onClick={saveName}>Salvar</button>
-
       <button onClick={changeBody}>
         {active ? 'Voltar para branco' : 'Mudar para cinza'}
       </button>
